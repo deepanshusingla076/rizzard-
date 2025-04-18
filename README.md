@@ -29,6 +29,7 @@ A modern educational website for Rizzard University, showcasing courses, program
 - FAQs
 - Review
 - OurTeam
+- Chatbot
 
 ## How to Run Locally
 
