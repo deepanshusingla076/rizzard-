@@ -1,0 +1,113 @@
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgb(181, 181, 184) 0%, rgb(161, 159, 164) 35%, rgb(197, 207, 209) 100%);
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 390px;
+    text-align: center;
+}
+
+h1.heading {
+    color: #f1d60c;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #f1d60c;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f1d60c;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #112f5c;
+}
+
+.strength-meter {
+    height: 5px;
+    width: 100%;
+    margin-top: 5px;
+    background: #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+.weak { background: red; }
+.medium { background: orange; }
+.strong { background: green; }
+
+#strength-text {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1.heading {
+        font-size: 1.8em;
+    }
+}

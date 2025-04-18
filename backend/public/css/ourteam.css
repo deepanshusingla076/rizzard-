@@ -1,0 +1,78 @@
+.team4 {
+    color: #8d97ad;
+    font-weight: 300;
+}
+
+.team4 h1,
+.team4 h2,
+.team4 h3,
+.team4 h4,
+.team4 h5,
+.team4 h6 {
+    color: #3e4555;
+}
+
+.team4 h5 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.team4 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
+
+.team4 ul li a {
+    color: #8d97ad;
+    display: block;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    -webkit-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    text-decoration: none;
+}
+
+.team4 ul li a:hover {
+    -webkit-transform: translate3d(0px, -5px, 0px);
+    transform: translate3d(0px, -5px, 0px);
+    color: #316ce8;
+}
+
+.team4 .img-fluid {
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team4 .img-fluid:hover {
+    transform: scale(1);
+}
+
+.team4 h3,
+.team4 h6.subtitle {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.team4 h3 {
+    animation: slideIn 1s forwards;
+}
+
+.team4 h6.subtitle {
+    animation: slideIn 1.2s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
